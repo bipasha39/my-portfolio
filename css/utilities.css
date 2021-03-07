@@ -1,0 +1,33 @@
+.flex{
+    display: flex;
+}
+.flex-1{
+    flex: 1;
+}
+.items-center{
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.btn{
+    padding:0.8rem 2.5rem;
+    font-weight:600;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.btn-primary{
+    background:#3DCFD3;
+    color: var(--secondary);
+}
+.btn-primary:hover{
+    background: transparent;
+    border-color:#3DCFD3;
+    color: #3DCFD3;
+}
