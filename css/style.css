@@ -142,19 +142,20 @@ section.service {
 .project_heading span {
   color: #3dcfd3;
 }
+
+.slider img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+  margin-bottom: 2rem;
+}
 .slider {
   text-align: center;
   padding: 0 15rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.slider_img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-
-  margin-bottom: 2rem;
 }
 
 .slider p {
@@ -186,4 +187,28 @@ section.service {
 }
 .slider_dots li.slick-active button {
   background: #3dcfd3;
+}
+section.work {
+  background: rgb(223, 221, 211);
+}
+.work_heading {
+  color: black;
+  line-height: 0.5;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.work_heading + p {
+  text-align: center;
+  font-family: sans-serif;
+  color: black;
+  margin-bottom: 3rem;
+}
+.work_heading span {
+  color: #3dcfd3;
+}
+.card-wrapper-work {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
 }
