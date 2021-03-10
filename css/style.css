@@ -7,11 +7,16 @@ root {
   --light: #f2f2f2;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+/*header and navbar css*/
 header {
   background-color: black;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 90%, 0 100%);
@@ -36,6 +41,10 @@ header nav .middle a:hover {
 }
 header nav .brand {
   padding-right: 3rem;
+}
+.right a{
+  text-decoration: none;
+  color: black;
 }
 .hero {
   padding: 3rem 0;
@@ -72,6 +81,7 @@ header nav .brand {
 section {
   padding: 6rem 0;
 }
+/*about me css*/
 section.about h1 {
   margin-bottom: 1rem;
   font-size: 1.6rem;
@@ -99,6 +109,7 @@ section.about .social a {
   width: 35 px;
   height: 35 px;
 }
+/*servics  css*/
 .service_heading {
   color: black;
   line-height: 0.5;
@@ -127,6 +138,7 @@ section.service {
   background: white;
   padding: 3rem 2rem;
 }
+/*project css*/
 .project_heading {
   color: black;
   line-height: 0.5;
@@ -152,15 +164,17 @@ section.service {
 }
 .slider {
   text-align: center;
-  padding: 0 15rem;
+  padding: 0, 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color:#b3ffff;
 }
 
 .slider p {
   font-family: sans-serif;
-  color: rgb(137, 137, 137);
+  color: black;
+  font-weight: 200;
   margin-bottom: 1rem;
 }
 .slider span {
@@ -188,8 +202,9 @@ section.service {
 .slider_dots li.slick-active button {
   background: #3dcfd3;
 }
+/* my work css*/
 section.work {
-  background: rgb(223, 221, 211);
+  background:AliceBlue;
 }
 .work_heading {
   color: black;
@@ -211,4 +226,177 @@ section.work {
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
+}
+.card1{
+  position: relative;
+  height: 350px;
+}
+.card1 img{
+  height: 100%;
+  width: 100%;
+}
+.card1 :hover.overlay{
+  opacity: 1;
+
+}
+.overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  background: rgb(21,207,211,0.9);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #f2f2f2;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.overlay a{
+  color: black;
+  text-decoration: none;
+}
+
+/*previous experience css*/
+
+section.previous{
+  background: black;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 90%, 0 100%);
+}
+.previous_heading {
+  color:white;
+  line-height: 0.5;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.previous_heading + p {
+  text-align: center;
+  font-family: sans-serif;
+  color:white;
+  margin-bottom: 3rem;
+}
+.previous_heading span {
+  color: #3dcfd3;
+}
+.card-wrapper-pre {
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-column-gap: 3rem;
+  grid-row-gap: 2rem;
+}
+.card2{
+background:white;
+}
+.card-content{
+  padding: 1.5rem;
+  padding-left: 2rem;
+  padding-right:2rem ;
+}
+.card-content h1{
+  font-size: 1rem;
+  font-weight: 600;
+}
+.img-wrapper{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding-top: 2rem;
+  padding-left: 4.5rem;
+}
+.card-content a{
+  color: #3dcfd3;
+  text-decoration: none;
+}
+.card-content span{
+  font-size: 0.8rem;
+  color: rgb(137, 137, 137);
+  
+}
+.card-content p{
+  font-size: 1rem;
+  color: rgb(137, 137, 137);
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+  
+}
+.contact_heading {
+  color:black;
+  line-height: 0.5;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.contact_heading + p {
+  text-align: center;
+  font-family: sans-serif;
+  color:rgb(137, 137, 137);
+  margin-bottom: 5rem;
+}
+.contact_heading span {
+  color: #3dcfd3;
+}
+.card-wrapper-contact {
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-column-gap: 3rem;
+  grid-row-gap: 2rem;
+}
+.card-contact{
+  text-align: center;
+
+}
+.card-contact img{
+  margin-bottom: 3rem;
+
+}
+.card-contact h2{
+  font-weight: 400;
+  margin-bottom: .5rem;
+
+}
+.card-contact h6{
+  font-size: 1rem;
+  color:rgb(137, 137, 137) ;
+  font-weight: 400;
+
+}
+/*footer css*/
+footer{
+  background:rgb(137, 137, 137);
+  text-align: center;
+  padding-top:5rem;
+  padding-bottom: 5rem;
+}
+.footer-social a{
+  margin-right: 1rem;
+
+}
+.copy-right{
+  color: white;
+  margin-top: 1rem;
+}
+
+/*media querie css*/
+
+@media only screen and (min-width: 576px){
+  .container{
+    max-width: 540px;
+  } 
+}
+
+@media only screen and (min-width: 768px){
+  .container{
+    max-width: 720px;
+  } 
+}
+@media only screen and (min-width: 992px){
+  .container{
+    max-width: 960px;
+  } 
+}
+@media only screen and (min-width: 1200px){
+  .container{
+    max-width: 1152px;
+  } 
 }

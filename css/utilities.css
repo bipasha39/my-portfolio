@@ -27,7 +27,7 @@
     color: var(--secondary);
 }
 .btn-primary:hover{
-    background: transparent;
+    background: white;
     border-color:#3DCFD3;
     color: #3DCFD3;
 }

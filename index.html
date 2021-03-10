@@ -27,14 +27,14 @@
             </div>
             <div class="middle">
               <a href="#">Home</a>
-              <a href="#">About</a>
-              <a href="#">Service</a>
-              <a href="#">Project</a>
-              <a href="#">Previous Experience</a>
+              <a href="#aboutscroll">About</a>
+              <a href="#servicescroll">Service</a>
+              <a href="#projectscroll">Project</a>
+              <a href="#previousscroll">Previous Experience</a>
             </div>
           </div>
           <div class="right">
-            <button class="btn btn-primary contact">Contact</button>
+            <button class="btn btn-primary contact"><a href="#contactscroll">Contact</a></button>
           </div>
         </nav>
         <div class="hero flex items-center justify-between">
@@ -56,7 +56,7 @@
         </div>
       </div>
     </header>
-    <section class="about">
+    <section id ="aboutscroll" class="about">
       <div class="container flex items-center">
         <div class="flex-1">
           <img src="images/profile.jpg" width="350" height="400" />
@@ -98,7 +98,7 @@
         </div>
       </div>
     </section>
-    <section class="service">
+    <section  id="servicescroll" class="service">
       <div class="container">
         <h1 class="service_heading"><span>My</span> Services</h1>
         <p>
@@ -144,7 +144,7 @@
         </div>
       </div>
     </section>
-    <section class="project">
+    <section id="projectscroll"class="project">
       <div class="container">
         <h1 class="project_heading"><span>My</span> Project</h1>
         <p>
@@ -170,7 +170,7 @@
             </p>
             <span>-Mark,Platformable Barcelona,Spain</span>
           </div>
-          
+
           <div class="slider">
             <img src="./images/platformable-icon-blue.png" alt="Platformable" />
             <p>
@@ -190,55 +190,150 @@
             <span>-Henriette, Migracode Barcelona,Spain</span>
           </div>
         </div>
-        <div class="slider_dots">
+        <div class="slider_dots"></div>
+      </div>
+    </section>
+    <section class="work">
+      <div class="container">
+        <h1 class="work_heading"><span>My</span> Work</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+          mollitia, molestiae quas vel sint
+        </p>
+        <div class="card-wrapper-work">
+          <div class="card1">
+            <div class="overlay">
+              <span>Category</span>
+              <a href="">Web development</a>
+            </div>
+            <img src="./images/work1.jpg" alt="work" />
+          </div>
 
+          <div class="card1">
+            <div class="overlay">
+              <span>Category</span>
+              <a href="">Web development</a>
+            </div>
+            <img src="./images/work1.jpg" alt="work" />
+          </div>
+          <div class="card1">
+            <div class="overlay">
+              <span>Category</span>
+              <a href="">Web development</a>
+            </div>
+            <img src="./images/work1.jpg" alt="work" />
+          </div>
+          <div class="card1">
+            <div class="overlay">
+              <span>Category</span>
+              <a href="">Web development</a>
+            </div>
+            <img src="./images/work1.jpg" alt="work" />
+          </div>
         </div>
       </div>
     </section>
-   <section class="work">
-     <div class="container">
-      <h1 class="work_heading"><span>My</span> Work</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-        mollitia, molestiae quas vel sint
-      </p>
-      <div class="card-wrapper-work">
-        
-        <div class="card">
-          <div class="overlay">
-            <span>Category</span>
-            <a href="">Web development</a>
+    <section id="previousscroll"class="previous">
+      <div class="container">
+        <h1 class="previous_heading"><span>My</span> Experience</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        <div class="card-wrapper-pre">
+          <div class="card2">
+            <div class="img-wrapper">
+              <img src="./images/chamber.jpg" width="200px" height="250px" />
+            </div>
+            <div class="card-content">
+              <h1>Clinical Physiotherapist</h1>
+              <span>4/2016 to 3/2019</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                mollitia, molestiae quas vel sint
+              </p>
+              <a href="#"> Read More</a>
+            </div>
           </div>
-          <img src="./images/work1.jpg" alt="work">
-        </div>
-
-        <div class="card">
-          <div class="overlay">
-            <span>Category</span>
-            <a href="">Web development</a>
+          <div class="card2">
+            <div class="img-wrapper">
+              <img src="./images/sports.jpg" width="200px" height="250px" />
+            </div>
+            <div class="card-content">
+              <h1>Sports Physiotherapist</h1>
+              <span>10/2017 to 2/2019</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                mollitia, molestiae quas vel sint
+              </p>
+              <a href="#"> Read More</a>
+            </div>
           </div>
-          <img src="./images/work1.jpg" alt="work">
-        </div>
-        <div class="card">
-          <div class="overlay">
-            <span>Category</span>
-            <a href="">Web development</a>
+          <div class="card2">
+            <div class="img-wrapper">
+              <img src="./images/teaching.jpg" width="200px" height="250px" />
+            </div>
+            <div class="card-content">
+              <h1>Lecturer </h1>
+              <span>8/2017 to 10/2018</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                mollitia, molestiae quas vel sint
+              </p>
+              <a href="#"> Read More</a>
+            </div>
           </div>
-          <img src="./images/work1.jpg" alt="work">
-        </div>
-        <div class="card">
-          <div class="overlay">
-            <span>Category</span>
-            <a href="">Web development</a>
-          </div>
-          <img src="./images/work1.jpg" alt="work">
         </div>
       </div>
-     </div>
+    </section>
 
-   </section>
-
-
+    <section id="contactscroll"class="contact">
+      <div class="container">
+        <h1 class="contact_heading">Contact <span>Me</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        <div class="card-wrapper-contact">
+          <div class="card-contact">
+            <img src="images/mobile.webp" width="80px" height="70px">
+            <h2>Call Me On</h2>
+            <h6>+34632228930</h6>
+          </div>
+          <div class="card-contact">
+            <img src="./images/email.png" width="80px" height="70px">
+            <h2>Mail Me On</h2>
+            <h6>physiobipasha39@gmail.com</h6>
+          </div>
+          <div class="card-contact">
+            <img src="./images/visit site.webp" width="80px" height="70px">
+            <h2>Visit US On</h2>
+            <h6>https://bcnphysicaltherapy.com/</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+    
+      <div class="footer-social">
+        <a href="#"
+          ><img
+            src="./images/web-footer.webp"
+            width="25"
+            height="25"
+            alt="website"
+        /></a>
+        <a href="#">
+          <img
+            src="./images/linkedin.-footer.png.crdownload"
+            alt="LinkdIn"
+            width="25"
+            height="25"
+        /></a>
+        <a href="#"
+          ><img
+            src="./images/insta.footer.png"
+            alt="Instagram"
+            width="25"
+            height="25"
+        /></a>
+      </div>
+      <div class="copy-right"> Copy rights 2019, name PSD templete .All rights reserved</div>
+    </footer>
 
     <script
       type="text/javascript"
